@@ -19,6 +19,7 @@ public class T3_GoogleSearch {
         driver.get("https://google.com ");
 
         WebElement googleSearchBox = driver.findElement(By.name("q"));
+
         googleSearchBox.sendKeys("apple"+ Keys.ENTER);
 
         String expectedTitle = "apple";
